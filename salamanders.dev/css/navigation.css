@@ -1,0 +1,378 @@
+li 
+{
+	display: inline;
+}
+:root {
+  --accent-colour: #ffe700;
+}
+
+@media screen and (min-width: 993px) {
+	div.nav 
+	{		
+		height: 90px;
+		width: 100%;
+		line-height: 90px;
+
+		position: fixed;
+		list-style:none;
+		padding-left: 5%;
+		padding-right: 5%;
+		
+		background-color: white;
+		
+		z-index: 1030;
+	}
+
+	.scrolled
+	{
+		background-color: #fff;
+		color: #000;
+	}
+
+	li .nav-title 
+	{
+		font-family: 'PT Mono', monospace;
+		font-size: 35px;
+		text-decoration: none;
+		color: #000;
+		opacity: .7;
+
+		position: relative;
+
+		-webkit-animation-duration: .3s;
+		transition-duration: .3s;
+	}
+	
+	li a.nav-title:hover 
+	{
+		color: #ffe700;
+		opacity: 1.5;
+	}
+
+	li h1.nav-title 
+	{
+		opacity: 1;
+		line-height: 90px;
+		position: relative;
+	}
+
+	li .doc-title-home
+	{
+		vertical-align: top;
+		transform: translate(0, -50%);
+	}
+
+	.doc-title-a:hover, .doc-title-a
+	{
+		text-decoration: none;
+	}
+
+	li .doc-title
+	{
+		padding: 10px;
+
+		font-family: 'Lato', monospace;
+		font-size: 16px;
+		text-transform: uppercase;
+		
+		color: #000;
+		background-color: #ffe700;
+
+		position: relative;
+		
+		-webkit-animation-duration: .3s;
+		transition-duration: .3s;
+	}
+
+	.doc-title-a:hover, .doc-title-a
+	{
+		text-decoration: none;
+	}
+
+	li .nav-title-home 
+	{
+		padding: 5px;
+		background-color: #000;
+		color: #ffe700;
+	}
+	
+	li .nav-a 
+	{
+		color: #000;
+
+		font-weight: 300;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	
+	li a.nav-a
+	{
+		margin: 0 20px;
+		display:inline;
+
+		font-family: 'Lato', sans-serif;
+		font-size: 13px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #000;
+
+		-webkit-animation-duration: .3s;
+		transition-duration: .3s;
+	}
+
+	nav.nav 
+	{		
+		height: 90px;
+		width: 100%;
+		line-height: 90px;
+
+		position: fixed;
+		list-style:none;
+		padding-left: 5%;
+		padding-right: 5%;
+		
+		background-color: transparent;
+		
+		z-index: 1030;
+
+		-webkit-animation-duration: .3s;
+		transition-duration: .3s;
+	}
+
+	nav li a.nav-a, nav li a.nav-a:hover.seleted
+	{
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	nav.scrolled 
+	{
+		background-color: #fff;
+	}
+
+	nav.scrolled li a.nav-a, nav.scrolled li a.nav-a:hover
+	{
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	a.nav-a {
+		padding: 5px;
+	  background:
+	     linear-gradient(
+	       to bottom, var(--accent-colour) 0%,
+	       var(--accent-colour) 100%
+	     );
+	    background-position: 0 100%;
+	    background-repeat: repeat-x;
+	    background-size: 15px 3px;
+	  	color: #000;
+	  	text-decoration: none;
+
+	  	transition: background-size .5s;
+	  	transition-duration: color .5s;
+	}
+
+	a.nav-a:hover {
+		padding: 5px;
+	 	background-size: 4px 70px;
+	  	color: black;
+	}
+
+	.navMini 
+	{
+		display: none;
+	}
+
+	a.seleted 
+	{
+			opacity: .9;
+			background: linear-gradient(to bottom, var(--accent-colour) 0%, var(--accent-colour) 100%);
+			background-position: 0 100%;
+			background-repeat: repeat-x;
+			background-position: -5px;
+			background-size: 3px 3px;
+			color: #000;
+			text-decoration: none;
+	}
+
+	a.seleted:hover
+	{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffe700' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: auto 100%;
+		background-size: auto 4px;
+		background-repeat: repeat-x;
+		background-position: -5px;
+		text-decoration: none;
+	}
+
+}
+
+/* Navigation MOBILE///////////////////////////////////////////////////////////////////////////////////*/
+@media  screen and (min-width : 0px) and (max-width : 992px) {
+	.nav 
+	{
+		display: none;
+	}  	
+	
+	.navMini 
+	{
+		height: 90px;
+		width: 100%;
+		line-height: 90px;
+
+		position: fixed;
+		list-style:none;
+		padding: 0;
+
+		background-color: #000;
+		z-index: 1024;
+	}
+  	
+	.overlay 
+	{
+		height: 0;
+		width: 100%;
+		
+		overflow-x: hidden;
+		position: fixed;
+		left: 0;
+		top: 0;
+
+		background-color: rgba(44,62,80, 0.9);
+		
+		transition: 0.5s;
+		z-index: 1000;
+	}	
+
+	.overlay-content 
+	{
+		width: 100%;
+		
+		position: relative;
+		//text-align: center;
+	}
+	
+	.overlay a 
+	{
+		display: block;
+
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #818181;
+
+		-webkit-animation-duration: .3s;
+		transition: 0.3s;
+	}
+	
+	.overlay a:hover, .overlay a:focus 
+	{
+		color: #f1f1f1;
+	}
+	
+	@media screen and (max-height: 450px) 
+	{
+		.overlay {overflow-y: auto;}
+		
+		.overlay a {font-size: 20px}
+		
+	}
+	
+	#btn-nav
+	{
+		position: relative;
+		float: right;
+		right: 5%;
+		top: 0%;
+		
+		color: #fff;
+		
+		cursor:pointer;
+	}
+	
+	.menu-ico  
+	{
+		fill: #ffe700;
+		
+		-webkit-animation-duration: .4s;
+		transition: .4s;
+	}
+	
+	.menu-ico:hover
+	{
+		fill: #fff;
+	}
+	
+	#logo 
+	{
+		position: relative;
+		left: 5%;
+
+		font-family: 'PT Mono', monospace;
+		font-size: 5vw;
+		text-decoration: none;
+		text-transform: none;
+		color: #ffe700;
+		
+		-webkit-animation-duration: .4s;
+		transition: .4s;
+	}
+	
+	#logo:hover 
+	{
+		color: #fff;
+	}
+}
+
+/*  MOBILE MENU //////////////////////////////////////#55efc4/////////*/
+
+.overlay {
+	height: 0%;
+	width: 100%;
+    
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	width: 100%;
+	
+	position: relative;
+	text-align: center;
+	top: 25%;
+}
+
+.overlay a {
+	display: block;
+	right: 5%;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8vw;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #818181;
+	
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff87e;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+}
+

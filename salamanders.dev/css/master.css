@@ -1,0 +1,655 @@
+html { height: 100%; }
+body {height: 100%; }
+#content {min-height: 100%; }
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														GLOBAL
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.main 
+{
+	width: 80vw;
+	
+	position: relative;
+	padding-top: 90px;
+	left: 10vw;
+
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+
+}
+
+.macos, .windows, .linux
+{
+	display: none;
+}
+
+
+.presentation-container 
+{
+	height: calc(100vh - 90px);
+}
+
+
+/* Download page downloader */
+.download-container
+{
+	height: 100vh;
+
+	position: relative;
+	align-items: center;
+
+	background-color: #2d3436;
+}
+
+
+.table-container 
+{
+	position: relative;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.align-right 
+{
+	text-align: justify;
+	text-align-last: right;
+}
+
+.top-5
+{
+	padding-top: 5vh;
+}
+
+.top-10
+{
+	padding-top: 10vh;
+}
+
+.top-15
+{
+	padding-top: 15vh;
+}
+
+.top-p-5
+{
+	margin-top: 5vh;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														FONTS
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+h1.sectionTitle 
+{
+	font-family: 'PT Mono', monospace;
+	font-weight: 300;
+	font-size: 35px;
+}
+
+p.text
+{
+	position: relative;
+	text-align: justify;
+
+	font-size: 17px;
+}
+
+p.text-alert
+{
+	color: #d63031;
+}
+
+
+/*//////////////////////////////////////////////	Index	//////////////////////////////////////////////*/
+
+
+h5.name-title
+{
+	font-family: 'PT Mono', monospace;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+
+/*//////////////////////////////////////////////	Documentation	//////////////////////////////////////////////*/
+
+
+h5.doc-h5 
+{
+	position: relative;
+	padding: 5px;
+
+	font-family: 'PT Mono', monospace;
+	font-size: 18px;
+
+	background-color: #000;
+	color: #ffe700;
+}
+
+kbd
+{
+	margin-right: 5px;
+	margin-left : 5px;
+}
+
+mark 
+{
+	text-transform: uppercase;
+
+	background-color: #ffe700;
+	color: black;
+}
+
+
+/*//////////////////////////////////////////////	Download	//////////////////////////////////////////////*/
+
+
+.doc-release-titles
+{
+	font-family: 'PT Mono', monospace;
+}
+
+h2.doc-release-titles
+{
+	padding-top: 3%;
+
+	font-size: 30px;
+}
+
+h4.doc-release-titles
+{
+	padding-top: 2%;
+
+	font-size: 20px;
+	text-decoration: underline;
+	letter-spacing: .3px;
+}
+
+span.text-alert
+{
+	color: #d63031;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														Links
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+a img.img-logo:hover 
+{
+	animation: jump 1s ease 1;
+}
+
+/*//////////////////////////////////////////////	Documentation	//////////////////////////////////////////////*/
+
+
+button.btn-link 
+{
+	font-family: 'PT Mono', monospace;
+	text-decoration: none;
+	color : #ffe700;
+}
+
+button.btn-link:hover 
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+button.btn-link-doc
+{
+	position: relative;
+	padding: 0;
+
+	vertical-align: top;
+
+	font-family: 'Lato', sans-serif;
+	font-size: ;
+	font-weight: 300;
+
+	color: #007bff;
+}
+
+button.btn-link-doc:hover
+{
+	color: #007bff;
+	text-decoration: underline;
+}
+
+
+
+/*//////////////////////////////////////////////	Download	//////////////////////////////////////////////*/
+
+
+/* Download button: */
+.download-button
+{
+	position: relative;
+	left: 50%;
+
+	padding: 2vh  3vw;
+	background-color: #ffe700;
+
+	border-radius: 7px;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 400;
+	text-align: center;
+	color: black;
+
+	opacity: 0.8;
+
+	transform: translateX(-50%);
+
+	-webkit-animation-duration: .5s;
+	transition-duration: .5s;
+}
+
+.download-button:hover
+{
+	opacity: 1;
+	
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 400;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+.download-ico
+{
+	height: 1.4em;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														LISTS & TABLES
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*//////////////////////////////////////////////	Documentation	//////////////////////////////////////////////*/
+
+
+.list-cmd-doc 
+{
+	list-style: none;
+}
+
+table.doc-table
+{
+	position: relative;
+	table-layout: fixed;
+
+	left: 5%;
+	max-width:95%;
+	white-space:nowrap;
+}
+
+table.doc-table td
+{
+	padding: 0 5px;
+}
+
+
+/*//////////////////////////////////////////////	Download	//////////////////////////////////////////////*/
+
+
+.download-table 
+{
+	width: 100%;
+	margin-top: 5vh;
+}
+
+ul.release-note-list {
+  list-style-type: none;
+}
+
+ul.release-note-list > li:before {
+  content: "–"; /* en dash */
+  position: absolute;
+  margin-left: -1.1em; 
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														IMAGES
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+img.img-logo 
+{
+	position: relative;
+	height: auto;
+	width: 100%;
+
+  	-webkit-animation: gbounce 4s ease infinite;
+  	animation: gbounce 4s ease infinite;
+  	animation-delay: 10000ms;
+}
+
+.viu
+{
+	width: 100%;
+}
+
+
+/*//////////////////////////////////////////////	Documentation	//////////////////////////////////////////////*/
+
+
+.img-doc-basic, .img-doc, .img-doc-MacOS
+{
+	display: none;
+	width: 80%;
+
+	position: relative;
+	padding-bottom: 15px;
+	left: 50%;
+
+	transform: translate(-50%, 0%);
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														FOOTER
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.footer 
+{
+	position: relative;
+	height:60px; 
+	width:100%;
+ 
+	top: 5vh;
+	bottom:0;
+ 
+	background:#ffe600;
+}
+
+.footer .love 
+{
+	position: relative;
+	
+	left: 50%;
+	top: 50%;
+	
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.footer .love .icon 
+{	
+	font-size: 12px;
+	line-height: 60px;
+	width: 22px;
+
+	margin-left: 2px;
+	margin-right: 2px;
+	
+	fill: #ED1C24;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														MOBILE
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width : 0px) and (max-width: 992px) {
+
+	/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+														Links
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+	
+
+	/* Documentation Title demonstration index page*/
+
+
+	.index-doc-title
+	{
+		padding: 10px;
+		background-color: #000;
+
+		font-family: 'PT Mono', monospace;
+		font-size: 3vw;
+		text-decoration: none;
+		color: #ffe700;
+		opacity: .7;
+
+		-webkit-animation-duration: .4s;
+		transition-duration: .4s;
+	}
+
+	.index-doc-title:hover
+	{
+		text-decoration: none;
+		color: #ffe700;
+		opacity: 1;	
+	}
+
+	.index-doc-title-documentation
+	{
+		position: relative;
+		top: -2px;
+
+		padding: 7px;
+		background-color: #ffe700;
+
+		font-family: 'PT Mono', monospace;
+		font-size: 2vw;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	.index-doc-title-documentation:hover
+	{
+		text-decoration: none;
+		color: #000;
+		opacity: 1;	
+	}
+
+
+	/* Team container */
+
+}
+
+/* Home Introduction - Home Page //////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*  Team Info - Home Page */ 
+
+
+
+/* Mobile Display - HOME PAGE*/
+@media  screen and (min-width : 0px) and (max-width : 768px) {
+
+	h1.sectionTitle 
+	{
+		padding-top: 5vh;
+	}
+
+	.viu
+	{
+		position: relative;
+		width: 30%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+	}
+
+	.presentation-container 
+	{
+		height: auto;
+	}
+
+	.team-container
+	{
+		display: none;
+	}
+
+	
+
+}
+
+
+/* Home Introduction - DOWNLOAD Page //////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.download-app
+{
+	padding: 0;
+	margin-top: 4em;
+	display: inline-flex;
+	flex-direction: column;
+
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: #ffe700;
+
+	border: 1.5px solid #636e72;
+	border-radius: 20px;
+}
+
+.download-app-item
+{
+	flex: 1;
+}
+
+.app-logo
+{
+	flex: 0 0 600px;
+}
+
+.download-app-title
+{
+	position: relative;
+
+	font-family: 'PT Mono', monospace;
+	letter-spacing: .3em;
+}
+
+.download-app li 
+{
+	padding: 1rem;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
+	border-top: 1px solid #636e72;
+}
+
+.download-app li:first-child
+{
+	border-top: none;
+}
+
+.download-app .support, .download-app .release-note
+{
+	font-weight: 300;
+	font-size: 1em;
+	text-decoration: none;
+	color: #8e8373;
+}
+
+.download-app .version, .download-app .platform
+{
+	font-size: 1.5em;
+	line-height: 2rem;
+	letter-spacing: .15em;
+}
+
+
+
+
+
+
+
+/* Mobile Display - DOWNLOAD PAGE*/
+@media  screen and (min-width : 0px) and (max-width : 768px) 
+{
+	.container-content-Download, .download-container
+	{
+		display: none;
+	}	
+}
+
+
+/* Home Introduction - DOCUMENTATION Page //////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.card-header 
+{
+	background-color: #000;
+}
+
+
+
+
+/* Home FOOTER - Home Page //////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+	<!-- VIEW PORT + CHARSET -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137724174-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-137724174-1');
+	</script>
+
+
+    <!-- External links -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" 
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|PT+Mono" rel="stylesheet">    
+    
+
+    <!-- Internal Links -->
+	<link rel="stylesheet" href="../css/navigation.css">
+	<link rel="stylesheet" href="../css/master.css">
+	<link rel="stylesheet" href="css/animations.css">
+
+	<script src="js/nav.js" charset="utf-8"></script>
+
+
+    <!-- Page Title  / Icon -->
+	<link rel="icon" type="image/x-icon" href="../library/favicon.ico">
+	<title>SCFE Documentation | salamanders' lab</title>
+
+</head>
+
+
+<!-- BODY -->
+<body onLoad="user_os();">	
+	<!-- NAVIGATION -->
+	<div class="nav">
+		<li><h1 class="nav-title"><a href="../index.html" class="nav-title nav-title-home">salamanders' lab<a class="doc-title doc-title-home">Documentation</a></a></h1></li>
+		<ul class='ml-auto'>
+			<li><a href="#" class="nav-a seleted">Documentation</a></li>
+			<li><a href="download.html" class="nav-a">Download</a></li>
+		</ul>
+		
+	</div>
+
+	<!-- NAVIGATION MOBILE -->
+	<div class="navMini"> 
+		<a href="../index.html" id="logo">Salamanders' Docs</a>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" id="btn-nav" onclick="closeNav()">
+				<!-- Close BTN SVG -->
+				<svg enable-background="new 0 0 32 32" height="32px" class="menu-ico" version="1.1" viewBox="0 0 32 32" width="32px" 
+					xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path 
+						d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0
+						l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286
+						c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0
+						c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" id="Close"/><g/><g/><g/><g/><g/><g/>
+				</svg>
+			</a>
+			
+			<div class="overlay-content">
+				<a href="#" class="seleted">Documentation</a>
+				<a href="download.html">Download</a>
+			</div>
+		</div>
+
+		<a href="javascript:void(0)" class="closebtn" id="btn-nav" onclick="openNav()">
+			<!-- Open BTN SVG -->
+			<svg enable-background="new 0 0 32 32" height="32px" class="menu-ico" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" 
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Menu_1_">
+					<path d="M1,10h30c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H1C0.448,8,0,8.448,0,9C0,9.552,0.448,10,1,10z"/>
+					<path d="M31,15H1c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h30c0.552,0,1-0.448,1-1C32,15.448,31.552,15,31,15z"/>
+					<path d="M31,22H11c-0.552,0-1,0.448-1,1s0.448,1,1,1h20c0.552,0,1-0.448,1-1S31.552,22,31,22z"/></g><g/><g/><g/><g/><g/><g/>
+			</svg>
+		</a>
+    </div>
+	<!-- END OF NAVIGATION -->
+    
+    
+	<!-- MAIN CODE-->
+
+    <div class="main row top-15">
+
+			<!-- Intro -->
+			
+			<div class="col-xl-2 col-lg-1"></div>
+			<div class="col-xl-8 col-lg-10">
+				<p class="text">Hello and Welcome on the official SCFE documentation. In this section, you will find not only all the essential knowledge to get started with the application, as well as all the information needed to become a POWER USER. We hope that this documentation will help you in your quest of mastering our software. --> If you have any questions about how to use the application, please feel free to contact a member of the team. 
+				</p>
+			</div>
+			<div class="col-xl-2 col-lg-1"></div>
+		
+
+
+			<div class="col-xl-2 col-lg-1"></div>
+			<div class="accordion col-xl-8 col-lg-10 p-3" id="accordionExample">
+
+			 	<!-- FIRST CARD -->
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								How to read the doc
+							</button>
+						</h2>
+					</div>
+
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+						<p class="text">Let's first of all, learn quickly how this documentation works.</p>
+
+						<p class="text">Anytime you need to use a key shortcut, we will write shortcut itself in the following manner:</p> 
+						<p class="text"><kbd>,</kbd></p>
+						<p class="text"> or, separated by a "+" when you need multiple keys: (e.g: when used in <b>SEA</b> mode) </p> 
+						<p class="text"><kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+
+						<p class="text top-p-5"><mark>REMARK:</mark> Please note that we will only show the shortcuts for the <b>NAV</b> mode. If you seek the shortcuts for <b>SEA</b> mode, please combine <kbd>ctrl</kbd> to the <b>NAV</b> mode shortcut.
+						
+						<p class="text"><mark>REMARK:</mark> Furthermore, please note that if a shortcut is explicitly written with the <kbd>Ctrl</kbd> key, you will have to use the <kbd>Ctrl</kbd> key even in <b>NAV</b> mode.</p>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- SECOND CARD -->
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							  Navigation | Start here
+							</button>
+						</h2>
+					</div>
+
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+
+							<!-- Understanding the UI -->
+							<h5 class="doc-h5">Understanding the UI</h5>
+							<p class="text">When you open the application, you will get something resembling the following:</p>
+							<img src="../library/ui.jpeg" class="img-doc-basic" alt="SCFE - UI | salamanders' documentation" />
+							<img src="../library/screen-macOS/ui_macOS.png" class="img-doc-MacOS" alt="SCFE - UI (macOS) | salamanders' documentation" />
+
+							<p class="text">Let's present what each element of the window represents:</p>
+
+							
+							<ul class="list-cmd-doc">
+								<li><p class="text"><b>dir:</b> (top left) corresponds to the path to your current folder</p></li>
+								<li><p class="text"><b>[6] </b> (top right) corresponds to the number of element in your folder</p></li>
+								<li><p class="text"><b>elements in green</b> correspond to folders</p></li>
+								<li><p class="text"><b>elements in white</b> correspond to files</p></li>
+								<li><p class="text"><b>elements on the right</b> of each line respectively correspond to the size and last modification date</p></li>
+								<li><p class="text"><b>NAV</b> corresponds to the current mode of the application, on its right you can find the status message bar</p></li>
+								<li><p class="text"><b>~></b> Corresponds to the text bar which is mostly used in the <b>SEA</b> mode and when SCFE needs some input from you (e.g: renaming a file)</p></li>
+							</ul>
+
+							<p class="text top-p-5"><mark>REMARK:</mark> If you ever wonder if you have files selected/copied or other, just quickly glance at the status message. It will give you a good idea of the status of the application.
+							</p>
+
+
+
+							<!-- NAVIGATION MODE INTRO -->
+							<h5 class="doc-h5 top-p-5">Introduction to navigation modes</h5>
+							<p class="text"> 
+								The SCFE application provides you with two main navigation modes. Those are <b>NAV</b> and <b>SEA</b> respectively <b>NAVigation</b> and <b>SEArch</b>. To switch from one to the other, you have depending on your current mode 1 or 2 alternatives which are:
+							</p>
+							
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>e</kbd></p></td>
+									<td><p class="text">If you are currently in <b>NAV</b> mode and want to switch to <b>SEA</b> mode</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd><kbd>Ctrl</kbd> + <kbd>e</kbd></kbd></p></td>
+									<td><p class="text">If you want to switch from either mode to the other</p></td>
+								</tr>
+							</table>
+
+							<p class="text top-p-5">The main difference between both search modes is that: <em>(newbie | simplified)</em></p>
+
+							<ul class="list-cmd-doc">
+								<li><p class="text">in <b>NAV</b> mode the keys of your keyboards are shortcuts that allow you to navigate through files extremely efficiently</p></li>
+								<li><p class="text">in <b>SEA</b> mode you have to maintain the <kbd>Ctrl</kbd> alongside the <b>NAV</b> mode shortcut in order to use a shortcut. The reason for this difference is the fact that you can type in names of files and folders in the <b>SEA</b> mode which you cannot do in <b>NAV</b> mode. (to learn more, see <button class="btn btn-link-doc collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Bascis III | I AM A BOSS</button> (SEA mode | Like a boss))</p></li>
+							</ul>
+							<p class="text top-p-5"><mark>Remark:</mark> you can use the <kbd>Ctrl</kbd> key as well in <b>NAV</b> mode</p>
+							<p class="text"><mark>Remark:</mark> for advanced users, See <button class="btn btn-link-doc collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Bascis III | I AM A BOSS</button></p>
+
+
+							
+							<!-- NAVIGATION MODES USING -->
+							<h5 class="doc-h5 top-p-5">Navigating your files</h5>
+							<p class="text">Although there are different ways of navigating your files in SCFE, we will here discuss the simplest and most instinctive one. The one you need to know to get going. The basic keys you need to remember are henceforth:</p>
+
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>&#8592;</kbd> The <b>Back Arrow</b></p></td>
+									<td><p class="text">key corresponds to a go to the parent directory</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>&#8595;</kbd> The <b>Down Arrow</b></p></td>
+									<td><p class="text">key corresponds to move the cursor down</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>&#8593;</kbd> The <b>Up   Arrow </b></p></td>
+									<td><p class="text">key corresponds to move the cursor up</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>&#8594;</kbd> The <b>Right Arrow</b></p></td>
+									<td><p class="text">key corresponds to the go-to children directory/enter key</p></td>
+								</tr>
+							</table>
+
+
+							<p class="text top-p-5"><mark>REMARK:</mark>  If you use the <b>right arrow</b> key on a file, this will open the file in question just as the return key would</p>
+							<p class="text"><mark>Remark:</mark> As indicated previously, for advanced users, more powerful navigation technics can be found in the <button class="btn btn-link-doc collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Bascis III | I AM A BOSS</button></p>
+							
+
+							<!-- DOING THINGS WITH FILES -->
+							<h5 class="doc-h5 top-p-5">Doing things with files</h5>
+							<p class="text">If you ever find yourself wondering how to perform a basic operation, think OOOOOOption. Why? Because when you type <kbd>o</kbd> (in <b>NAV</b> mode or <kbd><kbd>Ctrl</kbd> + <kbd>o</kbd></kbd> in <b>SEA</b> mode), it launches a <b>"File Option"</b> page. From this page, you will not only be able to complete the focused action by hitting the <kbd>ENTER</kbd> key but the application will also remind you of the essential shortcuts for day-to-day actions. To get rid of the <b>"File Option"</b>, just press the <kbd>ESC</kbd> key or go to the button labeled <b>"back"</b> and press <kbd>ENTER</kbd></p>
+
+							<p class="text top-p-5">Another very important shortcut to remember is <kbd><kbd>Shift</kbd> + <kbd>o</kbd></kbd> which will open the <b>"Current Directory Options"</b>. This enables you to perform daily actions on your current folder (such as refresh, create a new folder...)</p>
+
+
+							<h5 class="doc-h5 top-p-5">When SCFE needs input from you</h5>
+							<p class="text">You now recognize the typical SCFE window. Here we redirect your attention towards the bottom of the window. In the <b>Text box area</b>.</p>
+							<img src="../library/creating.jpeg" class="img-doc-basic" alt="SCFE needs your input | salamanders' documentation">
+							<img src="../library/screen-macOS/creating_macOS.png" class="img-doc-MacOS" alt="SCFE needs your input (macOS) | salamanders' documentation" />
+							
+							<p class="text">Here, you can see someone, here an SCFE member, <b>create a new file</b> from the application. Where we want to draw your attention though, is to what you have to do when the <b>application requires your input</b>. When this happens, the application will, on its own, focus on the <b>text box</b>. If you have a doubt concerning what you have to do, remember to have a glance at the <b>status message</b>, it will tell you what to do. In this case, the user has to <b>give a new name</b> to the file he is creating.</p>
+
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- USEFUL SHORTCUTS | NEWBIE CARD -->
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							  Basics I__ | Newbie
+							</button>
+						</h2>
+					</div>
+					
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">
+							<p class="text">All the shortcuts seen in this part are prety much  straight forward as  you will see as you discover them.</p>
+							<p class="text"><mark>Remark:</mark> If you want to cancel any action on files/folders, just press the <kbd>ESC</kbd> key once.</p>
+
+							<!-- Creatings Files / Folders -->
+							<h5 class="doc-h5 top-p-5">Creating</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>n</kbd></p></td>
+									<td><p class="text">to create a new file</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd><kbd>shift</kbd> + <kbd>n</kbd></kbd></p></td>
+									<td><p class="text">to create a new folder</p></td>
+								</tr>
+							</table>
+
+
+							<!-- Copying | cutting | pasting -->
+							<h5 class="doc-h5 top-p-5">Editing</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>c</kbd></p></td>
+									<td><p class="text">to copy a file/folder</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>x</kbd></p></td>
+									<td><p class="text">to cut a file/folder</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>v</kbd></p></td>
+									<td><p class="text">to paste a file/folder</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>r</kbd></p></td>
+									<td><p class="text">to rename a file/folderr</p></td>
+								</tr>
+							</table>
+
+
+							<!-- Selecting multiple files -->
+							<h5 class="doc-h5 top-p-5">Multiple file selection</h5>
+														<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>SPACE</kbd></p></td>
+									<td><p class="text">bar to select files/folders</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>s</kbd></p></td>
+									<td><p class="text">to select files/folders</p></td>
+								</tr>
+							</table>
+
+							<p class="text">selecting multiple files will look something like this (Here two files are selected, the ones in blue):</p>
+							<img src="../library/screen-macOS/selecting_macOS.png" class="img-doc-MacOS" alt="selecting files in SCFE (macOS) | salamanders' documentation" />
+
+							<p class="text"><mark>Remark:</mark> Selecting multiple files in SCFE is very powerful as you can operate actions on all of those at the same time (e.g: deleting multiple files, etc.). </p>
+							<p class="text"><mark>Remark:</mark> It is nice to note that most of the previous and following shortcuts will work conjointly with selecting multiple files. Although, some actions like renaming are not compatible with multiple file selection at the moment</p>
+
+
+							<!-- DELETING FILES -->
+							<h5 class="doc-h5 top-p-5">Deleting</h5>
+							<p class="text">Please note that deleting a file/folder requires confirmation. Therefore you will need to procede as follows to delete in SCFE:</p>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>DELETE</kbd></p></td>
+									<td><p class="text">key to delete a file/folder</p></td>
+								</tr>
+							</table>
+						
+							<img src="../library/screen-macOS/deleting_macOS.png" class="img-doc-MacOS" alt="deleting in SCFE (macOS) | salamanders' documentation" />
+							<p class="text"><mark>remark:</mark> Please be mindful that deleting a file in SCFE is permanant and therefore cannot be undone. There are not trash/trash-can of any sort.</p>
+							<p class="text macos"><mark>Remark:</mark> Please note that on macs the <kbd>DELETE</kbd> key is optained by pressing <kbd><kbd>Fn</kbd> + <kbd>SUPR</kbd></kbd></p>							
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- USEFUL SHORTCUTS | NEWBIE CARD -->
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h2 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							  Basics II_ | Intermediate
+							</button>
+						</h2>
+					</div>
+					
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+						<div class="card-body">
+							<p class="text">This section of the documentation is for those of you who already master the Basics I__ part of the documentation and want to get more out of their daily use of SCFE. You will learn here, how to show hidden files, navigate through your files extremely fast and finally how  to Change the sorting order in the app.</p>
+
+							<!-- Show Hidden files -->
+							<h5 class="doc-h5 top-p-5">Showing hidden files</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>t</kbd></p></td>
+									<td><p class="text">to toggle hidden files/folders</p></td>
+								</tr>
+							</table>
+
+							<img src="../library/screen-macOS/hiddenFiles_macOS.png" class="img-doc-MacOS" alt="Toggle hidden files in SCFE (macOS) | salamanders' documentation">
+							<p class="text"><mark>Remark:</mark> Hidden files are shown in gray and hidden folders in orange. This way is is easier to differentiate them from traditional files/folders</p>
+							
+
+							<!-- Goto -->
+							<h5 class="doc-h5 top-p-5">Go-to</h5>
+														<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>g</kbd></p></td>
+									<td><p class="text">To use go-to</p></td>
+								</tr>
+							</table>
+							
+							<p class="text">This functionality is very powerful! And as you are probably already an advanced user, you must know your folders by heart from the hundreds of hours you spent looking for files on your machine. If so SCFE might just have become dear to your heart. Indeed, the Go-to functionnality allows you to go to any directory in your machine using an absolut path.</p>
+
+						
+							<!--  SORTING METHOD -->
+							<h5 class="doc-h5 top-p-5">Change Sorting method</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd><kbd>Shift</kbd> + <kbd>S</kbd></kbd> Change Sorting order</p></p></td>
+								</tr>
+							</table>
+
+							<p class="text">SCFE as quite a lot of different sorting methods to suit your needs and preferences. Unfortunately, for now we do not save those preferences from one session to the other. The different Sorting methods are:</p>
+							<table class="doc-table">
+							  <tr>
+							    <td><p class="text"><kbd><kbd>A</kbd> &#8594 <kbd>Z</kbd></kbd></p></td>
+							    <td><p class="text">sorting by <b>name</b> </p></td>
+							  </tr>
+							  <tr>
+							    <td><p class="text"><kbd><kbd>.A</kbd> &#8594 <kbd>.Z</kbd></kbd></p></td>
+							    <td><p class="text">sorting by <b>extension</b></p></td>
+							  </tr>
+							  <tr>
+							    <td><p class="text"><kbd><kbd>big</kbd> &#8594 <kbd>small</kbd></kbd></p></td>
+							    <td><p class="text">sorting by <b>size</b></p></td>
+							  </tr>
+							  <tr>
+							    <td><p class="text"><kbd><kbd>recents</kbd> &#8594 <kbd>old</kbd></kbd></p></td>
+							    <td><p class="text">sorting by <b>date</b></p></td>
+
+							  </tr>
+							</table>
+
+							<!-- Sorting Order -->
+							<h5 class="doc-h5 top-p-5">Toggle sorting order</h5>
+							
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd><kbd>Shift</kbd>  + <kbd>Q</kbd></kbd></p></td>
+									<td><p class="text">Toggle Sorting order</p></td>
+								</tr>
+							</table>
+
+							<p class="text">The toggle sorting order functionality allows you to just switch the order in which you display the files depending on your sorting method. For example if you sort from <kbd><kbd>A</kbd> &#8594 <kbd>Z</kbd></kbd> toggling it will end up by showing the files from <kbd><kbd>Z</kbd> &#8594 <kbd>A</kbd></kbd>.</p>
+							
+							<h5 class="doc-h5 top-p-5">COMING SOON</h5>
+							<ul class="list-cmd-doc">
+								<li></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- BASICS III | I AM A BOSS CARD -->
+				<div class="card">
+					<div class="card-header" id="headingFive">
+						<h2 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							  Basics III | I AM A BOSS
+							</button>
+						</h2>
+					</div>
+					
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+						<div class="card-body">
+							<p class="text">This section of the documentation will mainly set its focus on how to use git in SCFE. This tool being very powerful, we think it deserves a substential place in the documentation.</p>
+
+							<!-- USING GIT IN SCFE -->
+							<h5 class="doc-h5 top-p-5">Using Git in SCFE</h5>
+
+							<img src="../library/using-git-SCFE.gif" class="img-doc-MacOS img-doc-basic" alt="using git in SCFE | salamanders' documentation">
+
+							<p class="text"><mark>Remark:</mark> We would like to draw your attention to the fact that, the color scheme changes for git repositories. Indeed, you can see that a not-modified file will be displayed in white where as the not-modified folders will be displayed in blue. Modified files/folders will be displayed in brown. Futhermore ignored files/folders will be displayed in gray.</p>
+
+							<p class="text">NB: For privacy and security reasons, we do not show nor save any passwords you may enter in the app (this is why you will have to re-enter your password everytime).</p>
+							<!-- BASICS -->
+							<h5 class="doc-h5 top-p-5">Git 1 0 1 : Getting Started</h5>
+							
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd><kbd>Alt</kbd> + <kbd>i</kbd></kbd></p></td>
+									<td><p class="text">Initialize a repository in the current directory</p></td>
+								</tr>
+								<tr>
+									<td><p class="text"><kbd><kbd>Shift</kbd> + <kbd>G</kbd></kbd></p></td>
+									<td><p class="text">Clone a repository in the current directory</p></td>
+								</tr>
+							</table>
+
+							<p class="text"><mark>Remark:</mark> Cloning/Initializing a repository will put you in the directory cloned/created</p>
+
+
+							<h5 class="doc-h5 top-p-5">Git 2 0 2 : Manipulating Files</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd><kbd>Shift</kbd> + <kbd>P</kbd></kbd></p></td>
+									<td><p class="text">Pull from origin</p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text top-p-5"><kbd>i</kbd></p></td>
+									<td><p class="text top-p-5">Stage file if possible</p></td>
+								</tr>
+								<tr>
+									<td><p class="text"><kbd><kbd>Shift</kbd> + <kbd>C</kbd></kbd></p></td>
+									<td><p class="text">Create a commit</p></td>
+								</tr>
+								<tr>
+									<td><p class="text"><kbd>p</kbd></p></td>
+									<td><p class="text">push to origin</p></td>
+								</tr>
+								<tr>
+									<td><p class="text top-p-5"><kbd><kbd>Shift</kbd> + <kbd>I</kbd></kbd></p></td>
+									<td><p class="text top-p-5">Unstage file if possible</p></td>
+								</tr>
+							</table>
+
+														
+							<!-- NAV mode  -->
+							<h5 class="doc-h5 top-p-5">NAV mode : Like a boss</h5>
+							<p class="text">Similar to <a href="https://www.vim.org/download.php" target="_blank">Vim</a>'s shortcuts for power navigation, you can use the  <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd> keys to navigate through files in a similar manner to the one you would with the arrow keys. Considering:
+							</p>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>h</kbd></p></td>
+									<td><p class="text">as <kbd>&#8592;</kbd></p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>j</kbd></p></td>
+									<td><p class="text">as <kbd>&#8595;</kbd></p></td>
+								</tr>
+		
+								<tr>
+									<td><p class="text"><kbd>k</kbd></p></td>
+									<td><p class="text">as <kbd>&#8593;</kbd></p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>l</kbd></p></td>
+									<td><p class="text">as <kbd>&#8594;</kbd></p></td>
+								</tr>
+							</table>
+
+							<p class="text"><mark>REMARK:</mark> Those shortcuts are very powerful as you can notice that the <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd> keys of your keyboard are on the same line making the access to any of those key shockingly easy. The goal is to put your four fingers each resting on one key and ready to enter in action as soon as needed.</p>
+							<p class="text"><mark>Remark:</mark> if you don't remember what the <b>arrow keys</b> do, see <button class="btn btn-link-doc collapsed" type="button " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">introduction to <b>navigating your files</b></button>.</p>
+
+
+							<!-- SEA mode : Like a boss -->
+<!-- 							<h5 class="doc-h5 top-p-5">SEA mode : Like a boss</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd>c</kbd></p></td>
+									<td><p class="text"></p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>x</kbd></p></td>
+									<td><p class="text"></p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text"><kbd>v</kbd></p></td>
+									<td><p class="text"></p></td>
+								</tr>
+							</table> -->
+
+							<!-- COM Mode -->
+							<h5 class="doc-h5 top-p-5">COM mode</h5>
+							<table class="doc-table">
+								<tr>
+									<td><p class="text"><kbd><kbd>Ctrl</kbd> + <kbd>Enter</kbd></kbd></p></td>
+									<td><p class="text">To switch to <b>COM mode</b></p></td>
+								</tr>
+
+								<tr>
+									<td><p class="text macos"><kbd><kbd>Shift</kbd> + <kbd>M</kbd></kbd></td>
+									<td><p class="text">To switch to <b>COM mode</b> on Macs</p></p></td>
+								</tr>
+							</table>
+							
+							<p class="text"><b>COM mode</b> is very powerful. You can use SCFE as your normal terminal (or nearly). You can in fact not navigate through your files with the <kbd>cd</kbd> command because it would have been redondant with the <b>go-to</b> functionality and would have not worked as well. Although all the other commands you are used to use will work just as expected in the app.</p>
+
+							<h5 class="doc-h5 top-p-5">COMING SOON</h5>
+
+						</div>
+					</div>
+				</div>
+
+					<!-- HEading 3 -->
+					<!-- Heading 4 -->
+			 	<!-- SEA MODE | POWER USER CARD -->
+			</div> <!-- END OF COLLAPSE--> 
+			<div class="col-xl-2 col-lg-1"></div>
+
+	</div> <!-- End Container -->
+
+
+    <!-- SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+	</script>
+    
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+	</script>
+    
+
+	<!-- SCRIPT NAVIGATION MOBILE -->
+	<script>
+		function openNav() 
+		{
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() 
+		{
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
